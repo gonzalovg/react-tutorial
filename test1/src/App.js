@@ -2,7 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./Components/Welcome";
 import Estado from "./Components/Estado";
-
+import RenderizadoElementos from "./Components/RenderizadoElementos";
+import Evento from "./Components/Eventos";
 function App() {
   return (
     <div className="App">
@@ -24,7 +25,9 @@ function App() {
             ></Welcome>
             <hr />
           </a>
-          <Estado estado="padre"></Estado>
+          <Estado className="class-test" estado="padre"></Estado>
+          <RenderizadoElementos />
+          <Evento></Evento>
         </header>
       </section>
     </div>

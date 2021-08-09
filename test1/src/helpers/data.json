@@ -1,0 +1,9 @@
+{
+  "frameworks": [
+    { "id": 1, "name": "React", "web": "React.com" },
+    { "id": 2, "name": "Vue", "web": "Vue.com" },
+    { "id": 3, "name": "Angular", "web": "Angular.com" },
+    { "id": 4, "name": "Svelte", "web": "Svelte.com" },
+    { "id": 5, "name": "Ember", "web": "Ember.com" }
+  ]
+}
