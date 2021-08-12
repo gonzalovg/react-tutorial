@@ -3,7 +3,7 @@ import "./App.css";
 import Welcome from "./Components/Welcome";
 import Estado from "./Components/Estado";
 import RenderizadoElementos from "./Components/RenderizadoElementos";
-import Evento from "./Components/Eventos";
+import { EventosES6, EventosES7 } from "./Components/Eventos";
 function App() {
   return (
     <div className="App">
@@ -27,7 +27,9 @@ function App() {
           </a>
           <Estado className="class-test" estado="padre"></Estado>
           <RenderizadoElementos />
-          <Evento></Evento>
+          <EventosES6></EventosES6>
+          <hr />
+          <EventosES7></EventosES7>
         </header>
       </section>
     </div>
