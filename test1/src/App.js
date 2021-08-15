@@ -3,7 +3,12 @@ import "./App.css";
 import Welcome from "./Components/Welcome";
 import Estado from "./Components/Estado";
 import RenderizadoElementos from "./Components/RenderizadoElementos";
-import { EventosES6, EventosES7 } from "./Components/Eventos";
+import { Padre } from "./Components/ComunicacionComponentes";
+import {
+  EventosES6,
+  EventosES7,
+  MasSobreComponentes,
+} from "./Components/Eventos";
 function App() {
   return (
     <div className="App">
@@ -30,6 +35,11 @@ function App() {
           <EventosES6></EventosES6>
           <hr />
           <EventosES7></EventosES7>
+          <hr />
+          <MasSobreComponentes></MasSobreComponentes>
+          <hr />
+          <Padre />
+          <hr />
         </header>
       </section>
     </div>
