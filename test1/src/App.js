@@ -4,6 +4,8 @@ import Welcome from "./Components/Welcome";
 import Estado from "./Components/Estado";
 import RenderizadoElementos from "./Components/RenderizadoElementos";
 import { Padre } from "./Components/ComunicacionComponentes";
+import CicloVida from "./Components/CicloVida";
+import AjaxApis from "./Components/AjaxApis";
 import {
   EventosES6,
   EventosES7,
@@ -40,6 +42,9 @@ function App() {
           <hr />
           <Padre />
           <hr />
+          <CicloVida></CicloVida>
+          <hr />
+          <AjaxApis></AjaxApis>
         </header>
       </section>
     </div>
