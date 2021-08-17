@@ -6,11 +6,14 @@ import RenderizadoElementos from "./Components/RenderizadoElementos";
 import { Padre } from "./Components/ComunicacionComponentes";
 import CicloVida from "./Components/CicloVida";
 import AjaxApis from "./Components/AjaxApis";
+import ContadorHooks from "./Components/ContadorHooks";
 import {
   EventosES6,
   EventosES7,
   MasSobreComponentes,
 } from "./Components/Eventos";
+import ScrollHooks from "./Components/ScrollHooks";
+
 function App() {
   return (
     <div className="App">
@@ -45,6 +48,9 @@ function App() {
           <CicloVida></CicloVida>
           <hr />
           <AjaxApis></AjaxApis>
+          <hr />
+          <ContadorHooks></ContadorHooks>
+          <ScrollHooks></ScrollHooks>
         </header>
       </section>
     </div>

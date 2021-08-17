@@ -1,6 +1,6 @@
 const cuadradoPromise = (value) => {
   if (typeof value !== "number") {
-    return Promise.reject(`Error, el valor ${value} no es un número`);
+    return Promise.reject(`Error, el valor ${ value } no es un número`);
   }
 
   return new Promise((resolve, reject) => {
@@ -18,7 +18,7 @@ const asignar = async () => {
   try {
     console.log("Incio async");
     let obj = await cuadradoPromise(123);
-    space.innerHTML = `${obj.value}, ${obj.result}`;
+    space.innerHTML = `${ obj.value }, ${ obj.result }`;
   } catch (e) {
     console.error(e);
   }

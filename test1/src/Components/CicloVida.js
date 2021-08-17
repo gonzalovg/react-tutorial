@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class Reloj extends Component {
+  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }
@@ -10,7 +11,7 @@ class Reloj extends Component {
   }
 
   render() {
-    return <h3>{this.props.hora}</h3>;
+    return <h3>{ this.props.hora }</h3>;
   }
 }
 
@@ -65,9 +66,9 @@ export default class CicloVida extends Component {
     return (
       <>
         <h2>Ciclo de Vida</h2>
-        {this.state.visible && <Reloj hora={this.state.hora}></Reloj>}
-        <button onClick={this.iniciar}>Iniciar</button>
-        <button onClick={this.detener}>Detener</button>
+        { this.state.visible && <Reloj hora={ this.state.hora }></Reloj> }
+        <button onClick={ this.iniciar }>Iniciar</button>
+        <button onClick={ this.detener }>Detener</button>
       </>
     );
   }
