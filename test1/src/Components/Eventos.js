@@ -86,7 +86,7 @@ export class MasSobreComponentes extends Component {
         <Boton evento={(e)=>this.handleClick(e,"Buenas")}></Boton> 
         */}
       </>
-
+// 
     );
   }
 }

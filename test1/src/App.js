@@ -7,6 +7,8 @@ import { Padre } from "./Components/ComunicacionComponentes";
 import CicloVida from "./Components/CicloVida";
 import AjaxApis from "./Components/AjaxApis";
 import ContadorHooks from "./Components/ContadorHooks";
+import Example from "./Components/test";
+import RelojHooks from "./Components/RelojHooks";
 import {
   EventosES6,
   EventosES7,
@@ -51,6 +53,10 @@ function App() {
           <hr />
           <ContadorHooks></ContadorHooks>
           <ScrollHooks></ScrollHooks>
+          <hr />
+          <Example></Example>
+          <hr />
+          <RelojHooks></RelojHooks>
         </header>
       </section>
     </div>
