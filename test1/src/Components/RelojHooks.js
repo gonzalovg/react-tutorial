@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Example from "./test";
 
-const Relos = ({ hora }) => {
+const Reloj = ({ hora }) => {
   return <h1>{hora}</h1>;
 };
 
@@ -9,20 +8,29 @@ const RelojHooks = () => {
   const [date, setDate] = useState(new Date().toLocaleTimeString());
   const [visible, setVisible] = useState(false);
 
-  const toogle = () => {
-    setVisible(!visible);
-    setDate(new Date().toLocaleTimeString());
-  };
+  useEffect(()=>{
+    let temporizador;
+    if(visible){
+      temporizador= setInterval(()=>{
+        setDate(new Date().toLocaleTimeString());
+      },1000);
+    }else {
+      clearInterval(temporizador);
+    }
+     return ()=>{
+        console.log("Fase de desmontaje");
+        clearInterval(temporizador);
+      }
+  },[visible])
 
-  const iniciar = () => {};
-  const detener = () => {};
 
   useEffect(() => {});
 
   return (
     <>
-      <h1>{visible ? <Relos hora={date} /> : "Pulsa toogle"}</h1>
-      <button onClick={toogle}>TOGGLE</button>
+      {visible && <Reloj hora={date} />} 
+      <button onClick={()=>setVisible(true)}>Iniciar</button>
+      <button onClick={()=>setVisible(false)}>Detener</button>
     </>
   );
 };
