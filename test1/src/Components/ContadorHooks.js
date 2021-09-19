@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const ContadorHooks = (props) => {
   const [contador, setContador] = useState(0);

@@ -31,32 +31,29 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Welcome
-              name="Gonzalo"
-              content="esto es del curso de Jon Mircha"
-            ></Welcome>
+            <Welcome name="Gonzalo" content="esto es del curso de Jon Mircha" />
             <hr />
           </a>
-          <Estado className="class-test" estado="padre"></Estado>
+          <Estado className="class-test" estado="padre" />
           <RenderizadoElementos />
-          <EventosES6></EventosES6>
+          <EventosES6 />
           <hr />
-          <EventosES7></EventosES7>
+          <EventosES7 />
           <hr />
-          <MasSobreComponentes></MasSobreComponentes>
+          <MasSobreComponentes />
           <hr />
           <Padre />
           <hr />
-          <CicloVida></CicloVida>
+          <CicloVida />
           <hr />
-          <AjaxApis></AjaxApis>
+          <AjaxApis />
           <hr />
-          <ContadorHooks></ContadorHooks>
-          <ScrollHooks></ScrollHooks>
+          <ContadorHooks />
+          <ScrollHooks />
           <hr />
-          <Example></Example>
+          <Example />
           <hr />
-          <RelojHooks></RelojHooks>
+          <RelojHooks />
         </header>
       </section>
     </div>

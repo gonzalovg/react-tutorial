@@ -14,7 +14,8 @@ const RelojHooks = () => {
     setDate(new Date().toLocaleTimeString());
   };
 
-  const ticTac = () => {};
+  const iniciar = () => {};
+  const detener = () => {};
 
   useEffect(() => {});
 
